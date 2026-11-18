@@ -1,0 +1,9 @@
+﻿@model IEnumerable<PhamQuangKhanh.Models.HangHoa>
+
+@{
+    ViewData["Title"] = "Trang chủ";
+    Layout = "~/Views/Shared/PhamQuangKhanh_Layout.cshtml";
+}
+
+@await Html.PartialAsync(
+    "PhamQuangKhanh_MainContent", Model)
